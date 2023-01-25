@@ -1,0 +1,54 @@
+body{
+    font-family:sans-serif;
+}
+header{
+    background: url(../imagenes/design1_image2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.seccion{
+    
+    color: black;
+    text-align: center;
+    border:1px solid black;
+}
+li {
+    list-style-type: none;
+    margin:10px;
+}
+
+li.nav{
+    list-style-type: none;
+    margin: 5px;
+    display: inline-block;
+}
+
+a:link, a:visited {
+    color:white;
+    background-color:rgb(64, 64, 216);
+    font-family: sans-serif;
+    border:1px solid black;
+    text-decoration: none;
+    box-shadow: 5px 5px 5px lightgray;
+    padding:5px
+
+  }
+  
+  a[href="#"]:link, a[href="#"]:visited {
+    color: white;
+   text-decoration: none;
+   background-color:rgb(42, 170, 42);
+   padding:5px;
+
+  }
+  a.mail{
+    color:blue;
+    background-color:white;
+    border:0px;
+    text-decoration:underline black;
+  }
+
+  p {
+    text-indent: 20px;
+  } 
