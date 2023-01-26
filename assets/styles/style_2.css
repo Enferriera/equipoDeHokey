@@ -9,11 +9,22 @@
 header{
     background: url(../imagenes/design1_image2.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: top;
+    height: 200px;
+   }
+
+.logo{
+  width:60px;
+
 }
 
-.seccion{
-    
+ h1{
+  display:block;
+  background-color: white;
+  
+}
+
+.titulo-seccion{
     color: black;
     text-align: center;
     border:1px solid black;
@@ -28,7 +39,6 @@ li.nav{
     margin: 5px;
     display: inline-block;
 }
-
 
 a:link, a:visited {
     color:white;

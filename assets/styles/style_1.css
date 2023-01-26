@@ -10,12 +10,20 @@ header{
     background: url(../imagenes/design1_image1.jpg);
     background-size: cover;
     background-position: center;
+    height: 200px;
 }
+.logo{
+  width:60px;
 
-.seccion{
+}
+.principal{
+  display:block;
+}
+.titulo-seccion{
     background-color: black;
     color: white;
     text-align: center;
+    
 }
 li {
     list-style-type: none;
