@@ -1,5 +1,15 @@
-body{
-    font-family:sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: 'Comic Neue', cursive;
+}
+*{
+  padding:0px;
+  margin:0px;
+  box-sizing: border-box;
+  font-family:sans-serif;
 }
 header{
     background: url(../imagenes/design1_image2.jpg);
@@ -24,6 +34,7 @@ li.nav{
     display: inline-block;
 }
 
+
 a:link, a:visited {
     color:white;
     background-color:rgb(64, 64, 216);
@@ -44,9 +55,10 @@ a:link, a:visited {
   }
   a.mail{
     color:blue;
-    background-color:white;
+    background-color:transparent;
     border:0px;
     text-decoration:underline black;
+  box-shadow:0px 0px 0px;
   }
 
   p {
