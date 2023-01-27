@@ -9,38 +9,40 @@
 header{
     background: url(../imagenes/design1_image2.jpg);
     background-size: cover;
-    background-position: top;
+    background-position: center;
     height: 200px;
-   }
-
-.logo{
-  width:60px;
-
+    position:relative;
+    top:60px;
 }
 
- h1{
-  display:block;
-  background-color: white;
-  
+h1 {
+  font-size: 3rem;
+  position:relative;
+  top:-55px;
 }
 
-.titulo-seccion{
-    color: black;
-    text-align: center;
-    border:1px solid black;
+.logo {
+  width: 70px;
+  float:right;
+  top: 120px;
+  right: 200px;
+  position: relative;
+ }
+
+.titulo-seccion {
+  background-color:white;
+  color:black;
+  text-align: center;
+  border:1px solid black;
+
 }
 li {
     list-style-type: none;
     margin:10px;
 }
 
-li.nav{
-    list-style-type: none;
-    margin: 5px;
-    display: inline-block;
-}
 
-a:link, a:visited {
+nav a:link, nav a:visited {
     color:white;
     background-color:rgb(64, 64, 216);
     font-family: sans-serif;
@@ -51,7 +53,7 @@ a:link, a:visited {
 
   }
   
-  a[href="#"]:link, a[href="#"]:visited {
+  nav a[href="#"] {
     color: white;
    text-decoration: none;
    background-color:rgb(42, 170, 42);
@@ -60,12 +62,43 @@ a:link, a:visited {
   }
   a.mail{
     color:blue;
-    background-color:transparent;
-    border:0px;
     text-decoration:underline black;
-  box-shadow:0px 0px 0px;
   }
-
+  nav {
+    width: fit-content;
+    position: absolute;
+    top:45px;
+    left:1000px;
+  }
   p {
     text-indent: 20px;
   } 
+
+  .img-about{
+    width: 200px;;
+    float: right;
+    margin:5px 10px;
+    position: relative;
+    top:-150px;
+    border-radius: 0% 40% 0% 40%;
+    border:1px solid yellow;
+  }
+  .img-home{
+    width: 200px;;
+    float: right;
+    position: relative;
+    right:200px;
+    top:-150px;
+    right:400px ;
+    border-radius: 0% 40% 0% 40%;
+    border:1px solid yellow;
+  }
+  .img-contact{
+    width: 200px;;
+    float: right;
+    right: 500px;
+    position: relative;
+    top:-60px;
+    border-radius: 0% 40% 0% 40%;
+    border:1px solid yellow;
+  }
