@@ -22,10 +22,10 @@ h1 {
 }
 
 .logo {
-  width: 70px;
-  float:right;
-  top: 120px;
-  right: 200px;
+  width: 100px;
+  float:left;
+  top: 200px;
+  left: 20px;
   position: relative;
  }
 
@@ -34,6 +34,8 @@ h1 {
   color:black;
   text-align: center;
   border:1px solid black;
+  position: relative;
+  top:30px;
 
 }
 li {
@@ -73,6 +75,20 @@ nav a:link, nav a:visited {
   p {
     text-indent: 20px;
   } 
+  .contenido-central {
+    position: relative;
+    margin-left: 200px;
+    top: 50px;
+    
+  }
+  
+  .contenido-central>p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .contenido-central p{
+    width: 800px;
+  }
 
   .img-about{
     width: 200px;;
