@@ -42,6 +42,7 @@ nav {
   width: fit-content;
   position: absolute;
   top: 250px;
+  left:10px;
 }
 
 .nav-link {
@@ -52,16 +53,31 @@ nav {
 
 }
 
-nav a:link,
-nav a:visited {
-  color: rgba(31, 31, 201, 0.582);
-  font-family: sans-serif;
-}
+nav a:link, nav a:visited {
+    color:black;
+    font-family: sans-serif;
+    border:1px solid black;
+    text-decoration: none;
+    box-shadow: 5px 5px 5px lightgray;
+    padding:5px;
+    border-radius:5px;
 
-nav a[href="#"] {
-  color: black;
-  text-decoration: none;
-}
+  }
+  
+  nav a[href="#"] {
+    color: white;
+   text-decoration: none;
+   background-color:rgb(42, 170, 42);
+   padding:5px;
+
+  }
+
+  nav a:link:hover, nav a:visited:hover{
+    color:white;
+    background-color:rgb(64, 64, 216);
+    transform: scale(1.2);
+    transition: background-color 0.5s, transform 1s;
+  }
 
 a.mail {
   color: blue;
@@ -72,16 +88,18 @@ p {
   text-indent: 20px;
 }
 main{
-   background-color: lightgray;
+   background-color: rgb(255, 255, 255);
+   height: 100vh;
     
 }
 .contenido-central {
   position: relative;
   margin-left: 150px;
   top: 50px;
-  backdrop-filter: blur(5px);
-  box-shadow: 5px 5px 5px transparent ;
+  box-shadow: 5px 5px 5px 5px lightgray;
   border-radius: 20px;
+  padding:10px;
+  width: 950px;
 }
 
 .contenido-central>p {
@@ -93,27 +111,30 @@ main{
   float: right;
   margin:5px 10px;
   position: relative;
+  right:15px;
   top:-150px;
+  box-shadow: 5px 5px 5px 5px lightgray;
   border-radius: 0% 40% 0% 40%;
   border:1px solid yellow;
 }
 .img-home{
-    display:none;
   width: 200px;;
   float: right;
   position: relative;
   right:200px;
   top:-150px;
-  right:400px ;
+  right:-250px ;
+  box-shadow: 5px 5px 5px 5px lightgray;
   border-radius: 0% 40% 0% 40%;
   border:1px solid yellow;
 }
 .img-contact{
   width: 200px;;
   float: right;
-  right: 500px;
   position: relative;
-  top:-60px;
+  top:-50px;
+  left:250px;
+  box-shadow: 5px 5px 5px 5px lightgray;
   border-radius: 0% 40% 0% 40%;
   border:1px solid yellow;
 }
