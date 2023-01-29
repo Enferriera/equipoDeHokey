@@ -8,36 +8,51 @@
 }
 
 header {
-    background-image: linear-gradient(to right, rgb(65, 60, 60),red, yellow);
-    height: 100px;
-}
-main {
+    background-image: whitesmoke;
+    /* height: 100px; */
     background-color:whitesmoke;
+}
+
+main {
+    background-color: whitesmoke;
     height: 100vh;
-   }
+}
+
+.text {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
 
 h1 {
-    font-size: 3rem;
-    color: white;
+    font-size: 4rem;
+    padding:10px 0px;
     text-align: center;
+    color:rgb(27, 116, 27);
 }
 
 .logo {
     width: 100px;
-    transform: translate(10px, 200px);
-    position:fixed;
+    bottom:5px;
+    right: 10px;
+    background-color:  rgb(253, 0, 139);
+    border-radius:50%;
+    position: fixed;
+    border:1px solid pink;
+    padding:5px;
+    z-index: 100;
 }
 
 .titulo-seccion {
-    background-color:transparent;
-    color:blue;
+    background-image: linear-gradient(to right,rgb(255, 10, 243), rgb(162, 106, 236));
     text-align: center;
+    font-size: 2rem;
     position: sticky;
-    top: 10px;
     width: fit-content;
+    top: 10px;
     transform: translateX(550px);
     z-index: 11;
-   }
+}
 
 li {
     list-style-type: none;
@@ -50,17 +65,17 @@ nav {
     width: 1302px;
     height: 50px;
     background-color: black;
-    padding-top: 15px; 
+    padding-top: 15px;
     z-index: 10;
     display: inline-block;
 }
 
 nav a:link,
 nav a:visited {
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: rgba(248, 239, 109, 0.788);
     font-family: sans-serif;
-    border: 1px solid rgb(64, 64, 216);
+    /* border: 1px solid rgb(173, 64, 64); */
     text-decoration: none;
     padding: 5px;
     border-radius: 5px;
@@ -72,7 +87,7 @@ nav a:visited {
 nav a[href="#"] {
     color: white;
     text-decoration: none;
-    background-color: rgb(42, 170, 42);
+    background-color: rgb(253, 0, 139);
     padding: 5px;
     border: none;
 
@@ -82,8 +97,8 @@ nav a[href="#"] {
 nav a:link:hover,
 nav a:visited:hover {
     color: white;
-    background-color: rgb(64, 64, 216);
-    transform: scale(1.5);
+    background-color:rgb(170, 0, 170);
+    transform: scale(1.2);
     transition: background-color 0.5s, transform 0.5s;
 }
 
@@ -121,7 +136,7 @@ p {
     margin: 5px 10px;
     position: relative;
     right: 15px;
-    top: -150px;
+    top: -170px;
     box-shadow: 5px 5px 5px 5px lightgray;
     border-radius: 0% 40% 0% 40%;
     border: 1px solid yellow;
