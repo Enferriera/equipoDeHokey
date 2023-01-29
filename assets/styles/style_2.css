@@ -48,7 +48,6 @@ li {
 nav a:link, nav a:visited {
     color:white;
     background-color:rgb(64, 64, 216);
-    font-family: sans-serif;
     border:1px solid black;
     text-decoration: none;
     box-shadow: 5px 5px 5px lightgray;

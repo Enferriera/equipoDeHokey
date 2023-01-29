@@ -8,28 +8,26 @@
 }
 
 header {
-  background: url(../imagenes/design1_image1.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 200px;
+  background-image: linear-gradient(to right, rgb(65, 60, 60) , yellow);
+  height: 150px;
 }
 
 h1 {
   font-size: 3rem;
+  color:white;
+  text-align: center;
 }
 
 .logo {
-  width: 70px;
-  float:right;
-  top: 120px;
-  right: 200px;
-  position: relative;
+  width: 80px;
+  transform: translate(10px,-40px);
  }
 
 .titulo-seccion {
   background-color: black;
   color: white;
   text-align: center;
+  transform: translateY(-50px);
 
 }
 
@@ -39,28 +37,25 @@ li {
 }
 
 nav {
-  width: fit-content;
-  position: absolute;
-  top: 250px;
-  left:10px;
-}
-
-.nav-link {
-
-  margin: 30px 10px;
-  display: block;
-  backdrop-filter: blur(5px);
-
+  width: 1302px;
+  height: 50px;
+  background-color: black;
+  padding: 10px;
+  transform: translate(0px,-50px);
+  padding-top: 15px;
+  align-content: center;
 }
 
 nav a:link, nav a:visited {
     color:black;
+    background-color: white;
     font-family: sans-serif;
-    border:1px solid black;
+    border:1px solid rgb(64, 64, 216) ;
     text-decoration: none;
-    box-shadow: 5px 5px 5px lightgray;
     padding:5px;
     border-radius:5px;
+    text-align: center;
+    margin: 10px;
 
   }
   
@@ -69,14 +64,21 @@ nav a:link, nav a:visited {
    text-decoration: none;
    background-color:rgb(42, 170, 42);
    padding:5px;
+   border:none;
 
   }
 
+  
   nav a:link:hover, nav a:visited:hover{
     color:white;
     background-color:rgb(64, 64, 216);
     transform: scale(1.2);
-    transition: background-color 0.5s, transform 1s;
+    transition: background-color 0.5s, transform 0.5s;
+  }
+  nav a[href="#"]:hover{
+    background-color:rgb(42, 170, 42);
+    transform: scale(1.2);
+    transition: background-color 0.5s, transform 0.5s;
   }
 
 a.mail {
@@ -88,18 +90,21 @@ p {
   text-indent: 20px;
 }
 main{
-   background-color: rgb(255, 255, 255);
+   background:url(../imagenes/hockey_3.jpg);
    height: 100vh;
+   background-position: center;
+   background-attachment: cover;
+   
     
 }
 .contenido-central {
   position: relative;
-  margin-left: 150px;
+  margin-left: 200px;
   top: 50px;
-  box-shadow: 5px 5px 5px 5px lightgray;
   border-radius: 20px;
   padding:10px;
-  width: 950px;
+  width: 800px;
+  backdrop-filter: blur(10px);
 }
 
 .contenido-central>p {
@@ -137,7 +142,4 @@ main{
   box-shadow: 5px 5px 5px 5px lightgray;
   border-radius: 0% 40% 0% 40%;
   border:1px solid yellow;
-}
-.contenido-central p{
-  width: 900px;
 }
