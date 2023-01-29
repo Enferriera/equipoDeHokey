@@ -1,145 +1,150 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'Comic Neue', cursive;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Neue', cursive;
 }
 
 header {
-  background-image: linear-gradient(to right, rgb(65, 60, 60) , yellow);
-  height: 150px;
+    background-image: linear-gradient(to right, rgb(65, 60, 60),red, yellow);
+    height: 100px;
 }
+main {
+    background-color:whitesmoke;
+    height: 100vh;
+   }
 
 h1 {
-  font-size: 3rem;
-  color:white;
-  text-align: center;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
 }
 
 .logo {
-  width: 80px;
-  transform: translate(10px,-40px);
- }
-
-.titulo-seccion {
-  background-color: black;
-  color: white;
-  text-align: center;
-  transform: translateY(-50px);
-
+    width: 100px;
+    transform: translate(10px, 200px);
+    position:fixed;
 }
 
+.titulo-seccion {
+    background-color:transparent;
+    color:blue;
+    text-align: center;
+    position: sticky;
+    top: 10px;
+    width: fit-content;
+    transform: translateX(550px);
+    z-index: 11;
+   }
+
 li {
-  list-style-type: none;
-  margin: 10px;
+    list-style-type: none;
+    margin: 10px;
 }
 
 nav {
-  width: 1302px;
-  height: 50px;
-  background-color: black;
-  padding: 10px;
-  transform: translate(0px,-50px);
-  padding-top: 15px;
-  align-content: center;
+    position: sticky;
+    top: 0px;
+    width: 1302px;
+    height: 50px;
+    background-color: black;
+    padding-top: 15px; 
+    z-index: 10;
+    display: inline-block;
 }
 
-nav a:link, nav a:visited {
-    color:black;
+nav a:link,
+nav a:visited {
+    color: black;
     background-color: white;
     font-family: sans-serif;
-    border:1px solid rgb(64, 64, 216) ;
+    border: 1px solid rgb(64, 64, 216);
     text-decoration: none;
-    padding:5px;
-    border-radius:5px;
+    padding: 5px;
+    border-radius: 5px;
     text-align: center;
     margin: 10px;
 
-  }
-  
-  nav a[href="#"] {
+}
+
+nav a[href="#"] {
     color: white;
-   text-decoration: none;
-   background-color:rgb(42, 170, 42);
-   padding:5px;
-   border:none;
+    text-decoration: none;
+    background-color: rgb(42, 170, 42);
+    padding: 5px;
+    border: none;
 
-  }
+}
 
-  
-  nav a:link:hover, nav a:visited:hover{
-    color:white;
-    background-color:rgb(64, 64, 216);
-    transform: scale(1.2);
+
+nav a:link:hover,
+nav a:visited:hover {
+    color: white;
+    background-color: rgb(64, 64, 216);
+    transform: scale(1.5);
     transition: background-color 0.5s, transform 0.5s;
-  }
-  nav a[href="#"]:hover{
-    background-color:rgb(42, 170, 42);
-    transform: scale(1.2);
-    transition: background-color 0.5s, transform 0.5s;
-  }
+}
+
 
 a.mail {
-  color: blue;
-  text-decoration: underline black;
+    color: blue;
+    text-decoration: underline black;
 }
 
 p {
-  text-indent: 20px;
+    text-indent: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
-main{
-   background:url(../imagenes/hockey_3.jpg);
-   height: 100vh;
-   background-position: center;
-   background-attachment: cover;
-   
-    
-}
+
 .contenido-central {
-  position: relative;
-  margin-left: 200px;
-  top: 50px;
-  border-radius: 20px;
-  padding:10px;
-  width: 800px;
-  backdrop-filter: blur(10px);
+    position: relative;
+    margin-left: 200px;
+    top: 50px;
+    border-radius: 20px;
+    padding: 10px;
+    width: 800px;
+    background-color: white;
+    box-shadow: 5px 5px 5px lightgrey;
+    z-index: 2;
 }
 
 .contenido-central>p {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
-.img-about{
-  width: 200px;;
-  float: right;
-  margin:5px 10px;
-  position: relative;
-  right:15px;
-  top:-150px;
-  box-shadow: 5px 5px 5px 5px lightgray;
-  border-radius: 0% 40% 0% 40%;
-  border:1px solid yellow;
+.img-about {
+    width: 250px;
+    float: right;
+    margin: 5px 10px;
+    position: relative;
+    right: 15px;
+    top: -150px;
+    box-shadow: 5px 5px 5px 5px lightgray;
+    border-radius: 0% 40% 0% 40%;
+    border: 1px solid yellow;
 }
-.img-home{
-  width: 200px;;
-  float: right;
-  position: relative;
-  right:200px;
-  top:-150px;
-  right:-250px ;
-  box-shadow: 5px 5px 5px 5px lightgray;
-  border-radius: 0% 40% 0% 40%;
-  border:1px solid yellow;
+
+.img-home {
+    width: 250px;
+    float: right;
+    position: relative;
+    top: -150px;
+    right: -300px;
+    box-shadow: 5px 5px 5px 5px lightgray;
+    border-radius: 0% 40% 0% 40%;
+    border: 1px solid yellow;
 }
-.img-contact{
-  width: 200px;;
-  float: right;
-  position: relative;
-  top:-50px;
-  left:250px;
-  box-shadow: 5px 5px 5px 5px lightgray;
-  border-radius: 0% 40% 0% 40%;
-  border:1px solid yellow;
+
+.img-contact {
+    width: 250px;
+    float: right;
+    position: relative;
+    top: -50px;
+    left: 280px;
+    box-shadow: 5px 5px 5px 5px lightgray;
+    border-radius: 0% 40% 0% 40%;
+    border: 1px solid yellow;
 }
