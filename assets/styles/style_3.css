@@ -92,6 +92,18 @@ nav a[href="#"] {
     border: none;
 }
 
+nav a:link:hover,
+nav a:visited:hover {
+    color: white;
+    background-color: rgba(166, 44, 237, 0.788);
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+
+}
+
 #link-logo:hover {
     transform: rotate(90deg);
     transition: transform 1s;
