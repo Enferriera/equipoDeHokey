@@ -1,16 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Comic Neue', cursive;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
-    background-image: whitesmoke;
-    /* height: 100px; */
-    background-color:whitesmoke;
+
+    background-image: linear-gradient(rgb(253, 0, 177), rgb(44, 2, 19));
 }
 
 main {
@@ -19,32 +18,33 @@ main {
 }
 
 .text {
-    background-clip: text;
+    background-clip: content-box;
     -webkit-background-clip: text;
     color: transparent;
 }
 
 h1 {
     font-size: 4rem;
-    padding:10px 0px;
+    padding: 10px 0px;
     text-align: center;
-    color:rgb(27, 116, 27);
+    color: white;
+    text-shadow: 0 0 5px #ff0000, 0 0 10px #0000ff;
 }
 
 .logo {
     width: 100px;
-    bottom:5px;
+    bottom: 5px;
     right: 10px;
-    background-color:  rgb(253, 0, 139);
-    border-radius:50%;
+    background-color: rgb(253, 0, 139);
+    border-radius: 50%;
     position: fixed;
-    border:1px solid pink;
-    padding:5px;
+    border: 1px solid pink;
+    padding: 5px;
     z-index: 100;
 }
 
 .titulo-seccion {
-    background-image: linear-gradient(to right,rgb(255, 10, 243), rgb(162, 106, 236));
+    background-image: linear-gradient(to right, rgb(255, 10, 243), rgb(162, 106, 236));
     text-align: center;
     font-size: 2rem;
     position: sticky;
@@ -62,11 +62,11 @@ li {
 nav {
     position: sticky;
     top: 0px;
-    width: 1302px;
+    width: 100%;
     height: 50px;
     background-color: black;
     padding-top: 15px;
-    z-index: 10;
+    z-index: 5;
     display: inline-block;
 }
 
@@ -75,7 +75,6 @@ nav a:visited {
     color: white;
     background-color: rgba(248, 239, 109, 0.788);
     font-family: sans-serif;
-    /* border: 1px solid rgb(173, 64, 64); */
     text-decoration: none;
     padding: 5px;
     border-radius: 5px;
@@ -89,19 +88,14 @@ nav a[href="#"] {
     text-decoration: none;
     background-color: rgb(253, 0, 139);
     padding: 5px;
+    text-align: center;
     border: none;
-
 }
 
-
-nav a:link:hover,
-nav a:visited:hover {
-    color: white;
-    background-color:rgb(170, 0, 170);
-    transform: scale(1.2);
-    transition: background-color 0.5s, transform 0.5s;
+#link-logo:hover {
+    transform: rotate(90deg);
+    transition: transform 1s;
 }
-
 
 a.mail {
     color: blue;
@@ -112,6 +106,7 @@ p {
     text-indent: 20px;
     margin-bottom: 5px;
     margin-top: 5px;
+    text-align: justify;
 }
 
 .contenido-central {
