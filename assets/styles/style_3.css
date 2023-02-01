@@ -6,33 +6,10 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-/* body{
-    background: url(../images/hockey_1.jpg);
-    background-position: top;
-    background-size: cover;
-    backdrop-filter: blur(5px);
-} */
 
-/* .bg-home {
-    background: url(../images/hockey_1.jpg);
-    background-position: top;
-    background-size: cover;
-    backdrop-filter: blur(5px);
+body {
+    background-color: rgb(184, 136, 184);
 }
-
-.bg-about {
-    background: url(../images/hockey_2.jpg);
-    background-position: bottom;
-    background-size: cover;
-    backdrop-filter: blur(5px);
-}
-
-.bg-contact {
-    background: url(../images/hockey_3.jpg);
-    background-position: bottom;
-    background-size: cover;
-    backdrop-filter: blur(5px);
-} */
 
 /*
 Estilos generales
@@ -53,8 +30,6 @@ main {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 section {
@@ -64,7 +39,7 @@ section {
     align-items: center;
     align-content: center;
     justify-content: space-evenly;
-    width: 100%;
+    width: 80%;
 }
 
 /*
@@ -73,17 +48,24 @@ Estilo de contenedor
 .contenido-central {
     display: flex;
     flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
     margin-bottom: 20px;
     border-radius: 20px;
+    border: 1px solid #f9fd00;
     padding: 20px 30px;
-    flex-grow: 6;
     background-color: rgb(6, 2, 2);
-    box-shadow: 5px 5px 5px lightgrey;
+    box-shadow: 5px 5px 5px rgb(227, 238, 127);
     z-index: 2;
+    width: inherit;
+}
+
+.fit-content {
+    width: fit-content;
 }
 
 .titulo-seccion {
-    background-image: linear-gradient(to right, rgb(254, 2, 224), rgb(248, 248, 9));
+    background-image: linear-gradient(to right, #fd008b, #f5d230);
     text-align: center;
     font-size: 2rem;
     position: sticky;
@@ -91,13 +73,15 @@ Estilo de contenedor
     margin-bottom: 10px;
     top: 5px;
     z-index: 11;
+    align-self: center;
+}
+
+.flex-end {
     align-self: flex-end;
 }
 
-.prueba-flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.padding-left {
+    padding-left: 100px;
 }
 
 /*
@@ -128,16 +112,16 @@ h1 {
 }
 
 article p,
-div p {
+div p,
+section p,
+li p {
     text-indent: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     margin-top: 5px;
+    margin-left: 5px;
     color: whitesmoke;
-
+    line-height: 1.8;
 }
-
-
-
 
 /*
 Estilos de LISTAS
@@ -146,18 +130,18 @@ Estilos de LISTAS
 ul.lista-index {
     list-style-type: none;
     margin: 10px;
-    list-style-type: none;
     width: 100%;
 }
 
 ul.list-rules {
     color: whitesmoke;
     list-style-type: circle;
+    padding-left: 20px;
 }
 
 ol.list-rules {
     color: whitesmoke;
-
+    padding-left: 20px;
 }
 
 li p {
@@ -271,27 +255,33 @@ Estilos de IMAGENES
 }
 
 .img-about {
-    align-self: center;
+    position: absolute;
+    left: 20px;
+    top: 320px;
     width: 250px;
-    margin: 5px 10px;
-    box-shadow: 5px 5px 5px 5px lightgray;
+    margin: 5px 20px 0px 0px;
+    box-shadow: 5px 5px 5px rgb(238, 231, 127);
     border-radius: 0% 40% 0% 40%;
-    border: 1px solid yellow;
-    flex-grow: 6;
+    /* border: 1px solid yellow; */
 }
 
 .img-home {
-    align-self: center;
+    position: absolute;
+    left: 20px;
+    top: 320px;
     width: 250px;
-    box-shadow: 5px 5px 5px 5px lightgray;
+    box-shadow: 5px 5px 5px rgb(238, 231, 127);
     border-radius: 0% 40% 0% 40%;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
 }
 
 .img-contact {
-
+    position: absolute;
+    left: 20px;
+    top: 320px;
     width: 250px;
-    box-shadow: 5px 5px 5px 5px lightgray;
+    margin: 5px 20px 0px 0px;
+    box-shadow: 5px 5px 5px rgb(238, 231, 127);
     border-radius: 0% 40% 0% 40%;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
 }
