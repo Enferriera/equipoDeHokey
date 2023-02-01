@@ -6,88 +6,192 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-body{
-  background:url(../images/hockey_1.jpg);
-  background-position: center;
-  background-size: cover;
-  padding-bottom:30px;
-  backdrop-filter: blur(5px);
+/* body{
+    background: url(../images/hockey_1.jpg);
+    background-position: top;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+} */
+
+/* .bg-home {
+    background: url(../images/hockey_1.jpg);
+    background-position: top;
+    background-size: cover;
+    backdrop-filter: blur(5px);
 }
 
-header {
+.bg-about {
+    background: url(../images/hockey_2.jpg);
+    background-position: bottom;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+}
 
-    background-image: linear-gradient(rgb(253, 0, 177), rgb(44, 2, 19));
+.bg-contact {
+    background: url(../images/hockey_3.jpg);
+    background-position: bottom;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+} */
+
+/*
+Estilos generales
+*/
+
+header {
+    background: url(../images/design1_image1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main {
-    padding-bottom: 30px;
-} 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+/*
+Estilo de contenedor
+*/
+.contenido-central {
+    display: flex;
+    flex-flow: column wrap;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 20px 30px;
+    flex-grow: 6;
+    background-color: rgb(6, 2, 2);
+    box-shadow: 5px 5px 5px lightgrey;
+    z-index: 2;
+}
+
+.titulo-seccion {
+    background-image: linear-gradient(to right, rgb(254, 2, 224), rgb(248, 248, 9));
+    text-align: center;
+    font-size: 2rem;
+    position: sticky;
+    width: fit-content;
+    margin-bottom: 10px;
+    top: 5px;
+    z-index: 11;
+    align-self: flex-end;
+}
+
+.prueba-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*
+Estilos de TEXTO
+*/
+.contenido-central>p {
+    margin-bottom: 10px;
+}
+
+h3,
+h4 {
+    color: whitesmoke;
+}
 
 .text {
     background-clip: content-box;
     -webkit-background-clip: text;
     color: transparent;
-    }
+}
 
 
 h1 {
     font-size: 4rem;
     padding: 10px 0px;
     text-align: center;
-    color: white;
-    text-shadow: 0 0 5px #ff0000, 0 0 10px #0000ff;
-}
-
-.logo {
-    width: 100px;
-    bottom: 5px;
-    right: 10px;
-    background-color: rgb(253, 0, 139);
-    border-radius: 50%;
-    position: fixed;
-    border: 1px solid pink;
-    padding: 5px;
-    z-index: 100;
-}
-
-.titulo-seccion {
-    background-image: linear-gradient(to right, rgb(255, 10, 243), rgb(162, 106, 236));
-    text-align: center;
-    font-size: 2rem;
-    position: sticky;
+    background-image: linear-gradient(to right, #5fa199, #f82ee4);
     width: fit-content;
-    top: 10px;
-    transform: translateX(550px);
-    z-index: 11;
 }
 
-.lista-index {
+article p,
+div p {
+    text-indent: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: whitesmoke;
+
+}
+
+
+
+
+/*
+Estilos de LISTAS
+*/
+
+ul.lista-index {
     list-style-type: none;
     margin: 10px;
+    list-style-type: none;
+    width: 100%;
 }
 
+ul.list-rules {
+    color: whitesmoke;
+    list-style-type: circle;
+}
+
+ol.list-rules {
+    color: whitesmoke;
+
+}
+
+li p {
+    text-indent: 0px;
+}
+
+/*
+Estilos de NAV y lINKS
+*/
 nav {
     position: sticky;
     top: 0px;
     width: 100%;
-    height: 50px;
+    height: min-content;
     background-color: black;
-    padding: 0px 0px;
+    border-bottom: 1px solid whitesmoke;
     z-index: 5;
-    display: inline-block;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 nav a:link,
 nav a:visited {
     color: white;
-    background-color: rgba(248, 239, 109, 0.788);
+    background-color: #5fa199;
     font-family: sans-serif;
     text-decoration: none;
     padding: 5px;
     border-radius: 5px;
     text-align: center;
     margin: 10px;
-    display:inline-block;
+    display: inline-block;
 }
 
 nav a[href="#"] {
@@ -97,7 +201,7 @@ nav a[href="#"] {
     padding: 5px;
     text-align: center;
     border: none;
-    display:inline-block;
+    display: inline-block;
 }
 
 nav a:link:hover,
@@ -123,87 +227,70 @@ a.mail {
     text-decoration: underline black;
 }
 
-p {
-    text-indent: 20px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    color:whitesmoke;
-    
-}
-li p{
-  text-indent: 0px;
-}
+/*
+Estilos de  TABLAS
+*/
 
-
-.contenido-central {
-    position: relative;
-    margin-left: 200px;
-    margin-bottom:20px;
-    top: 50px;
-    border-radius: 20px;
-    padding: 10px;
-    padding-left: 30px;
-    width:900px;
-    background-color: rgb(31, 30, 30);
-    box-shadow: 5px 5px 5px lightgrey;
-    z-index: 2;
-}
-
-.contenido-central>p {
-    margin-bottom: 10px;
-}
-h3,h4{
-    color:whitesmoke;
-}
-.list-rules{
-    color:whitesmoke;
-}
 table {
-  width: 100%;
+    width: 100%;
 }
-tr{
-  height: 50px;
-  color:white;
+
+tr {
+    height: 50px;
+    color: white;
 }
-td{
-  text-align: center;
-  color:white;
- 
+
+td {
+    text-align: center;
+    color: white;
 }
-th, td {
-  border-bottom: 1px solid #ddd;
+
+th,
+td {
+    border-bottom: 1px solid whitesmoke;
 }
-.selector:hover{background-color: #f54da1;}
+
+tr.selector:hover {
+    background-color: #5fa199;
+
+}
+
+/*
+Estilos de IMAGENES
+*/
+.logo {
+    width: 100px;
+    background-color: rgb(253, 0, 139);
+    border-radius: 50%;
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+    border: 1px solid pink;
+    padding: 5px;
+    z-index: 100;
+}
 
 .img-about {
+    align-self: center;
     width: 250px;
-    float: right;
     margin: 5px 10px;
-    position: relative;
-    right: 15px;
-    top: -170px;
     box-shadow: 5px 5px 5px 5px lightgray;
     border-radius: 0% 40% 0% 40%;
     border: 1px solid yellow;
+    flex-grow: 6;
 }
 
 .img-home {
+    align-self: center;
     width: 250px;
-    float: right;
-    position: relative;
-    top: -150px;
-    right: -300px;
     box-shadow: 5px 5px 5px 5px lightgray;
     border-radius: 0% 40% 0% 40%;
     border: 1px solid yellow;
 }
 
 .img-contact {
+
     width: 250px;
-    float: right;
-    position: relative;
-    top: -50px;
-    left: 280px;
     box-shadow: 5px 5px 5px 5px lightgray;
     border-radius: 0% 40% 0% 40%;
     border: 1px solid yellow;
