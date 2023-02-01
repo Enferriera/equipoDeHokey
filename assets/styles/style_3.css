@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: rgb(184, 136, 184);
+    background-color: lightgrey;
 }
 
 /*
@@ -45,17 +45,17 @@ section {
 /*
 Estilo de contenedor
 */
-.contenido-central {
+.container-primary {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-content: center;
     margin-bottom: 20px;
     border-radius: 20px;
-    border: 1px solid #f9fd00;
+    border: 1px solid #fd009c;
     padding: 20px 30px;
     background-color: rgb(6, 2, 2);
-    box-shadow: 5px 5px 5px rgb(227, 238, 127);
+    box-shadow: 5px 5px 5px rgb(238, 127, 188);
     z-index: 2;
     width: inherit;
 }
@@ -64,8 +64,8 @@ Estilo de contenedor
     width: fit-content;
 }
 
-.titulo-seccion {
-    background-image: linear-gradient(to right, #fd008b, #f5d230);
+.title-section {
+    background-image: linear-gradient(to right, #fd003f, #30a6f5);
     text-align: center;
     font-size: 2rem;
     position: sticky;
@@ -74,6 +74,12 @@ Estilo de contenedor
     top: 5px;
     z-index: 11;
     align-self: center;
+}
+
+.text {
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .flex-end {
@@ -87,21 +93,18 @@ Estilo de contenedor
 /*
 Estilos de TEXTO
 */
-.contenido-central>p {
+.container-primary>p {
     margin-bottom: 10px;
 }
 
-h3,
-h4 {
+h3{
     color: whitesmoke;
 }
-
-.text {
-    background-clip: content-box;
-    -webkit-background-clip: text;
-    color: transparent;
+h4{
+    color:black;
+    margin-bottom: 10px;
+    width: fit-content;
 }
-
 
 h1 {
     font-size: 4rem;
@@ -127,7 +130,7 @@ li p {
 Estilos de LISTAS
 */
 
-ul.lista-index {
+ul.list-index {
     list-style-type: none;
     margin: 10px;
     width: 100%;
@@ -202,8 +205,8 @@ nav a:visited:hover {
 }
 
 #link-logo:hover {
-    transform: rotate(90deg);
-    transition: transform 1s;
+    transform: rotate(360deg);
+    transition: all 1s linear;
 }
 
 a.mail {
@@ -252,6 +255,7 @@ Estilos de IMAGENES
     border: 1px solid pink;
     padding: 5px;
     z-index: 100;
+    transition: all 1s linear;
 }
 
 .img-about {
@@ -260,9 +264,8 @@ Estilos de IMAGENES
     top: 320px;
     width: 250px;
     margin: 5px 20px 0px 0px;
-    box-shadow: 5px 5px 5px rgb(238, 231, 127);
+    box-shadow: 5px 5px 5px rgb(238, 127, 188);
     border-radius: 0% 40% 0% 40%;
-    /* border: 1px solid yellow; */
 }
 
 .img-home {
@@ -270,9 +273,8 @@ Estilos de IMAGENES
     left: 20px;
     top: 320px;
     width: 250px;
-    box-shadow: 5px 5px 5px rgb(238, 231, 127);
+    box-shadow: 5px 5px 5px rgb(238, 127, 188);
     border-radius: 0% 40% 0% 40%;
-    /* border: 1px solid yellow; */
 }
 
 .img-contact {
@@ -281,7 +283,38 @@ Estilos de IMAGENES
     top: 320px;
     width: 250px;
     margin: 5px 20px 0px 0px;
-    box-shadow: 5px 5px 5px rgb(238, 231, 127);
+    box-shadow: 5px 5px 5px rgb(238, 127, 188);
     border-radius: 0% 40% 0% 40%;
-    /* border: 1px solid yellow; */
+
 }
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltip-text {
+    visibility: hidden;
+    width:50px;
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    border: 1px solid #fd009c;
+   
+    /* Position the tooltip text - see examples below! */
+    position:fixed;
+    bottom: 110px;
+    right: 40px;
+    z-index: 2;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltip-text {
+    visibility: visible;
+  }
