@@ -90,6 +90,7 @@ Estilo de contenedor
     padding-left: 100px;
 }
 
+
 /*
 Estilos de TEXTO
 */
@@ -104,6 +105,10 @@ Estilos de TEXTO
 
 h3 {
     color: whitesmoke;
+}
+.underline{
+    text-decoration: underline;
+    text-decoration-color: whitesmoke;
 }
 
 h4 {
@@ -256,7 +261,7 @@ Estilos de IMAGENES
     border-radius: 50%;
     position: fixed;
     bottom: 5px;
-    right: 10px;
+    right: 20px;
     border: 1px solid pink;
     padding: 5px;
     z-index: 100;
