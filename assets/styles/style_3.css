@@ -55,7 +55,7 @@ Estilo de contenedor
     border: 1px solid #fd009c;
     padding: 20px 30px;
     background-color: rgb(6, 2, 2);
-    box-shadow: 5px 5px 5px rgb(238, 127, 188);
+    box-shadow: 5px 5px 10px rgb(238, 127, 188);
     z-index: 2;
     width: inherit;
 }
@@ -226,16 +226,17 @@ tr {
     height: 50px;
     color: white;
 }
-
+th{
+    text-shadow: 1px 1px rgb(253, 0, 139);
+}
 td {
     text-align: center;
     color: white;
 }
 
-th,
-td {
-    border-bottom: 1px solid whitesmoke;
-}
+/* td,th {
+     border-bottom: 1px solid rgb(38, 37, 36); 
+} */
 
 tr.selector:hover {
     background-color: #5fa199;
