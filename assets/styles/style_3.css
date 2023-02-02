@@ -110,7 +110,7 @@ h1 {
     font-size: 4rem;
     padding: 10px 0px;
     text-align: center;
-    background-image: linear-gradient(to right, #5fa199, #f82ee4);
+    background-image: linear-gradient(to right, #e7c103, #5fa199);
     width: fit-content;
 }
 
@@ -209,9 +209,9 @@ nav a:visited:hover {
     transition: all 1s linear;
 }
 
-a.mail {
-    color: blue;
-    text-decoration: underline black;
+.contact {
+    color: rgb(255, 225, 0);
+    text-decoration: none;
 }
 
 /*
@@ -233,10 +233,6 @@ td {
     text-align: center;
     color: white;
 }
-
-/* td,th {
-     border-bottom: 1px solid rgb(38, 37, 36); 
-} */
 
 tr.selector:hover {
     background-color: #5fa199;
@@ -260,7 +256,7 @@ Estilos de IMAGENES
 }
 
 .img-about {
-    position: absolute;
+    position:fixed;
     left: 20px;
     top: 320px;
     width: 250px;
