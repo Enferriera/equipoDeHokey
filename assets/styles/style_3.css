@@ -97,11 +97,17 @@ Estilos de TEXTO
     margin-bottom: 10px;
 }
 
-h3{
+.align-end {
+    align-self: flex-end;
+    padding-right: 200px;
+}
+
+h3 {
     color: whitesmoke;
 }
-h4{
-    color:black;
+
+h4 {
+    color: black;
     margin-bottom: 10px;
     width: fit-content;
 }
@@ -226,9 +232,11 @@ tr {
     height: 50px;
     color: white;
 }
-th{
+
+th {
     text-shadow: 1px 1px rgb(253, 0, 139);
 }
+
 td {
     text-align: center;
     color: white;
@@ -256,7 +264,7 @@ Estilos de IMAGENES
 }
 
 .img-about {
-    position:fixed;
+    position: fixed;
     left: 20px;
     top: 320px;
     width: 250px;
@@ -289,13 +297,14 @@ Estilos de IMAGENES
 .tooltip {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
-  }
-  
-  /* Tooltip text */
-  .tooltip .tooltip-text {
+    border-bottom: 1px dotted black;
+    /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltip-text {
     visibility: hidden;
-    width:50px;
+    width: 50px;
     padding: 10px;
     background-color: black;
     color: #fff;
@@ -303,15 +312,15 @@ Estilos de IMAGENES
     padding: 5px 0;
     border-radius: 6px;
     border: 1px solid #fd009c;
-   
+
     /* Position the tooltip text - see examples below! */
-    position:fixed;
+    position: fixed;
     bottom: 110px;
     right: 40px;
     z-index: 2;
-  }
-  
-  /* Show the tooltip text when you mouse over the tooltip container */
-  .tooltip:hover .tooltip-text {
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltip-text {
     visibility: visible;
-  }
+}
