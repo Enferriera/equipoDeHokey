@@ -329,3 +329,23 @@ Estilos de IMAGENES
 .tooltip:hover .tooltip-text {
     visibility: visible;
 }
+
+/*Definimos el marco del mapa*/
+.maps{
+    visibility: hidden;
+    position:absolute;
+    top:400px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+/*hacemos visible el mapa*/
+.visual-map:hover .maps{
+    visibility: visible;
+    transition: all 0.5s linear;
+}
+
+iframe{
+    width: 400px;
+    height: 300px;
+}
