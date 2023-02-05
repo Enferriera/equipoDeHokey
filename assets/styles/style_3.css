@@ -89,8 +89,11 @@ Estilo de contenedor
 .padding-left {
     padding-left: 100px;
 }
-
-
+.center-flex{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    }
 /*
 Estilos de TEXTO
 */
@@ -129,7 +132,7 @@ h1 {
 article p,
 div p,
 section p,
-li p {
+li p, label {
     text-indent: 20px;
     margin-bottom: 10px;
     margin-top: 5px;
@@ -138,6 +141,24 @@ li p {
     line-height: 1.8;
 }
 
+legend{
+    margin-left: 5px;
+    margin-top: 5px;
+    color: whitesmoke;
+    }
+    fieldset{
+         padding:10px 0px;
+         padding-left:30px;
+         margin-bottom: 10px;
+    }
+input{
+    margin:10px;
+}
+input:focus{
+    background-color: black;
+    color:white;
+    outline-color: #fd009c;
+}
 /*
 Estilos de LISTAS
 */
@@ -227,8 +248,8 @@ nav a:visited:hover {
     text-decoration: none;
 }
 
-.registration-link:link,
-.registration-link:visited {
+nav a.registration-link:link,
+nav a.registration-link:visited {
     color: rgb(5, 5, 5);
     background-color: #fefcfc;
     font-family: sans-serif;
@@ -242,19 +263,30 @@ nav a:visited:hover {
     margin: 10px;
     display: inline-block;
 }
-.registration-link:link:hover,
-.registration-link:visited:hover {
+nav a.registration-link:link:hover,
+nav a.registration-link:visited:hover {
     color: white;
-    background-image: linear-gradient(to right, rgb(253, 0, 139), rgb(253, 0, 139));
+    background-image: linear-gradient(to right, rgb(253, 0, 139), black);
     text-decoration: none;
     padding: 5px;
     border-radius: 5px;
+    box-shadow: 5px 5px 5px whitesmoke;
     text-align: center;
     margin: 10px;
     transform: scale(1.2);
     transition: transform 0.5s, background-image 0.5s;
 }
 
+nav a.registration-link[href="#"]{
+    color: white;
+    text-decoration: none;
+    background-color: rgb(253, 0, 139);
+    padding: 5px;
+    box-shadow: none;
+    text-align: center;
+    border: none;
+    display: inline-block;
+}
 /*
 Estilos de  TABLAS
 */
