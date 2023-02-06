@@ -36,11 +36,11 @@
             <form action="./show_data.html" method="get" class="container-primary">
                 <fieldset>
                     <legend>Personal Information</legend>
-                    <div> <label for="firstName">Player´s First Name:</label>
+                    <label for="firstName">Player´s First Name:</label>
                         <input type="text" name="firstName" id="firstName" required autofocus>
                         <label for="lastName">Last Name:</label>
                         <input type="text" name="lastName" id="lastName" required>
-                    </div>
+                    
                     <label for="address">Street Address:</label>
                     <input type="text" name="address" id="address" required>
                     <label for="city">City:</label>
@@ -48,7 +48,7 @@
                     <label for="zipCode">zip Code:</label>
                     <input type="text" name="zipCode" id="zipCode" required>
                     <label for="birthDate">Birth Date:</label>
-                    <input type="text" name="birthDate" id="birthDate" placeholder="mm/dd/yyyy" required>
+                    <input type="date" name="birthDate" id="birthDate" required>
                     <label> Gender:</label>
                     <label for="genderFemale">Female</label>
                     <input type="radio" name="gender" id="genderFemale" value="female">
@@ -132,7 +132,7 @@
                     <label for="sign">Parent/Guardian Name:</label>
                     <input type="text" name="sign" id="sign" required>
                     <label for="dateSign">Date:</label>
-                    <input type="text" name="dateSign" id="dateSign" placeholder="mm/dd/yyyy" required>
+                    <input type="date" name="dateSign" id="dateSign" required>
                 </fieldset>
                 <input type="submit" value="Submit">
                 <input type="reset" value="Reset Form">
