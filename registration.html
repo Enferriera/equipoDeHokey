@@ -30,9 +30,9 @@
             <a class="nav-link registration-link" href="#">Registration</a>
         </div>
     </nav>
-    <main>
+    <main class="bg-registration">
         <section>
-            <h2 class="title-section text align-end">Registration Form</h2>
+            <h2 class="title-section text align-end title-registration">Registration Form</h2>
             <form action="./show_data.html" method="get" class="container-primary">
                 <fieldset>
                     <legend>Personal Information</legend>
@@ -48,7 +48,7 @@
                     <label for="zipCode">zip Code:</label>
                     <input type="text" name="zipCode" id="zipCode" required>
                     <label for="birthDate">Birth Date:</label>
-                    <input type="date" name="birthDate" id="birthDate" placeholder="mm/dd/yyyy" required>
+                    <input type="text" name="birthDate" id="birthDate" placeholder="mm/dd/yyyy" required>
                     <label> Gender:</label>
                     <label for="genderFemale">Female</label>
                     <input type="radio" name="gender" id="genderFemale" value="female">
@@ -68,18 +68,22 @@
                 <fieldset>
                     <legend>Which elementary school do you live near?</legend>
                     <label>Closest School:</label>
+                   <div>
                     <input type="radio" name="schoolNear" id="schoolAJ" value="AJ_Katzenmaier">
                     <label for="schoolAJ">AJ Katzenmaier</label>
                     <input type="radio" name="schoolNear" id="schoolMarjorie" value="Marjorie_P_Hart">
                     <label for="schoolMarjorie">Marjorie P Hart</label>
                     <input type="radio" name="schoolNear" id="schoolGreenbay" value="Greenbay">
                     <label for="schoolGreenbay">Greenbay</label>
+                </div> 
+                <div>
                     <input type="radio" name="schoolNear" id="schoolNorth" value="North_Elementary">
                     <label for="schoolNorth">North Elementary</label>
                     <input type="radio" name="schoolNear" id="schoolHoward" value="Howard_A_Yeager">
                     <label for="schoolHoward">Howard A Yeager</label>
                     <input type="radio" name="schoolNear" id="schoolSouth" value="South_Elementary">
                     <label for="schoolSouth">South Elementary</label>
+                </div>
                 </fieldset>
                 <fieldset>
                     <legend>What position(s) do you normally play? (check all that apply)</legend>
@@ -128,9 +132,9 @@
                     <label for="sign">Parent/Guardian Name:</label>
                     <input type="text" name="sign" id="sign" required>
                     <label for="dateSign">Date:</label>
-                    <input type="text" name="dateSign" id="dateSigne" required>
+                    <input type="text" name="dateSign" id="dateSign" placeholder="mm/dd/yyyy" required>
                 </fieldset>
-                <input type="submit" value="Enviear">
+                <input type="submit" value="Submit">
                 <input type="reset" value="Reset Form">
             </form>
         </section>
