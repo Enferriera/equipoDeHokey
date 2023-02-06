@@ -89,11 +89,13 @@ Estilo de contenedor
 .padding-left {
     padding-left: 100px;
 }
-.center-flex{
-    display:flex;
+
+.center-flex {
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    }
+}
+
 /*
 Estilos de TEXTO
 */
@@ -132,7 +134,8 @@ h1 {
 article p,
 div p,
 section p,
-li p, label {
+li p,
+label {
     text-indent: 20px;
     margin-bottom: 10px;
     margin-top: 5px;
@@ -141,23 +144,65 @@ li p, label {
     line-height: 1.8;
 }
 
-legend{
+legend {
     margin-left: 5px;
     margin-top: 5px;
     color: whitesmoke;
-    }
-    fieldset{
-         padding:10px 0px;
-         padding-left:30px;
-         margin-bottom: 10px;
-    }
-input{
-    margin:10px;
 }
-input:focus{
-    background-color: black;
-    color:white;
-    outline-color: #fd009c;
+
+fieldset {
+    padding: 10px 0px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+input {
+    margin: 10px;
+}
+
+input:focus {
+    /* background-color: black; */
+    background-color: #fd009c;
+    color: white;
+    /* outline-color: #fd009c; */
+}
+
+input[type="radio"]:before {
+    content: "";
+    display: inline-block;
+    cursor: pointer;
+    width: 1em;
+    height: 1em;
+    border: 1px solid #d52d94;
+    text-align: center;
+    line-height: .8em;
+    padding: 0;
+    border-radius: 50%;
+    background-color: white;
+}
+
+input[type="radio"]:checked:before {
+    background-clip: content-box;
+    background-color: #ca3491;
+}
+
+input[type="checkbox"]:before{
+    content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  font-size: 1em;
+  text-align: center;
+  padding: 0;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked:before{
+    content: "\02713";
+    color:  white;
+    padding-bottom: 5px;
+    background-color: #ca3491;
+    border-radius: 2px;
 }
 /*
 Estilos de LISTAS
@@ -194,7 +239,7 @@ nav {
     height: min-content;
     background-color: black;
     border-bottom: 1px solid whitesmoke;
-    padding:0 20px;
+    padding: 0 20px;
     z-index: 5;
     display: flex;
     justify-content: space-between;
@@ -257,12 +302,13 @@ nav a.registration-link:visited {
     padding: 5px;
     margin-right: 10px;
     border-radius: 5px;
-    border:1px solid rgb(253, 0, 139);
-    box-shadow: 5px 5px 5px  rgb(253, 0, 139);
+    border: 1px solid rgb(253, 0, 139);
+    box-shadow: 5px 5px 5px rgb(253, 0, 139);
     text-align: center;
     margin: 10px;
     display: inline-block;
 }
+
 nav a.registration-link:link:hover,
 nav a.registration-link:visited:hover {
     color: white;
@@ -277,7 +323,7 @@ nav a.registration-link:visited:hover {
     transition: transform 0.5s, background-image 0.5s;
 }
 
-nav a.registration-link[href="#"]{
+nav a.registration-link[href="#"] {
     color: white;
     text-decoration: none;
     background-color: rgb(253, 0, 139);
@@ -287,6 +333,7 @@ nav a.registration-link[href="#"]{
     border: none;
     display: inline-block;
 }
+
 /*
 Estilos de  TABLAS
 */
