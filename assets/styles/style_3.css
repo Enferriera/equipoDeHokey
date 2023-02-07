@@ -59,6 +59,12 @@ Estilo de contenedor
     z-index: 2;
     width: inherit;
 }
+.bg-registration {
+    background: url(../images/funcoDucksMediana.png);
+    background-position: top left;
+    background-size: auto;
+    background-repeat: repeat;
+}
 
 .fit-content {
     width: fit-content;
@@ -96,12 +102,7 @@ Estilo de contenedor
     justify-content: center;
 }
 
-.bg-registration {
-    background: url(../images/funcoDucksMediana.png);
-    background-position: top left;
-    background-size: auto;
-    background-repeat: repeat;
-}
+
 
 /*
 Estilos de TEXTO
@@ -151,15 +152,19 @@ label {
     line-height: 1.8;
 }
 
-legend {
-    margin-left: 5px;
-    margin-top: 5px;
-    color: whitesmoke;
-}
+
 
 .title-registration {
     top: 46px;
     transform: translateY(-46px);
+}
+
+/*Estilos de formulario*/
+
+legend {
+    margin-left: 5px;
+    margin-top: 5px;
+    color: whitesmoke;
 }
 
 fieldset {
