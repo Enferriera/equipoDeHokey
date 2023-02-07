@@ -95,10 +95,11 @@ Estilo de contenedor
     flex-direction: column;
     justify-content: center;
 }
-.bg-registration{
+
+.bg-registration {
     background: url(../images/funcoDucksMediana.png);
-    background-position:top left;
-    background-size:auto;
+    background-position: top left;
+    background-size: auto;
     background-repeat: repeat;
 }
 
@@ -155,8 +156,9 @@ legend {
     margin-top: 5px;
     color: whitesmoke;
 }
-.title-registration{
-    top:46px;
+
+.title-registration {
+    top: 46px;
     transform: translateY(-46px);
 }
 
@@ -171,10 +173,8 @@ input {
 }
 
 input:focus {
-    /* background-color: black; */
     background-color: #fd009c;
     color: white;
-    /* outline-color: #fd009c; */
 }
 
 input[type="radio"]:before {
@@ -207,13 +207,14 @@ input[type="checkbox"]:before {
 
 input[type="checkbox"]:checked:before {
     content: "\02713";
-    color:white;
+    color: white;
     padding-bottom: 10px;
     background-color: #ca3491;
     border-radius: 2px;
 }
 
-input[type="submit"],input[type="reset"]{
+input[type="submit"],
+input[type="reset"] {
     color: white;
     width: 80%;
     background-color: #5fa199;
@@ -223,11 +224,14 @@ input[type="submit"],input[type="reset"]{
     border-radius: 5px;
     text-align: center;
     margin: 10px;
-    display: inline-block; 
-    align-self: center;  
+    display: inline-block;
+    align-self: center;
 
 }
-input[type="submit"]:hover,input[type="reset"]:hover{color: white;
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    color: white;
     background-color: rgba(166, 44, 237, 0.788);
     text-decoration: none;
     padding: 5px;
@@ -235,7 +239,9 @@ input[type="submit"]:hover,input[type="reset"]:hover{color: white;
     text-align: center;
     margin: 10px;
     transform: scale(1.2);
-    transition: transform 0.5s;}
+    transition: transform 0.5s;
+}
+
 /*
 Estilos de LISTAS
 */
@@ -473,17 +479,27 @@ Estilos de IMAGENES
 
 /*Definimos el marco del mapa*/
 .maps {
+    position:absolute;
     visibility: hidden;
-    position: absolute;
-    top: 400px;
-    margin-left: auto;
-    margin-right: auto;
-}
+    
+    }
+    .map-top{
+        top:50%;
+        
+    }
+    .map-center{
+        top:60%;
+        
+    }
+    .map-bottom{
+        top:80%;
+    }
 
 /*hacemos visible el mapa*/
 .visual-map:hover .maps {
     visibility: visible;
     transition: all 0.5s linear;
+  
 }
 
 iframe {

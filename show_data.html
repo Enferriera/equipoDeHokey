@@ -1,13 +1,29 @@
 <html>
 <head>
 <title>Feedback Sent</title>
+<link rel="stylesheet" href="./assets/styles/style_3.css">
 </head>
 <body>
+  <header>
+    <h1 class="text">Mighty Ducks Hockey League </h1>
+    <div class="tooltip"> <a href="./index.html"><img id="link-logo" class="logo"
+                src="./assets/images/Logo_Mighty_ducks-01.png" alt="Logo de Mighty Ducks Hockey League"></a>
+        <span class="tooltip-text">Home</span>
+    </div>
+</header>
+<nav>
+    
+        <a class="nav-link registration-link " href="./registration.html">Registration</a>
+</nav>
+  <main>
+  <section>
+    <h1 class="title-section text">The following information has been sent as your
+      feedback:</h1>
+  <article class="container-primary">
 <p align=center>&nbsp;</p>
-<h1 align=center><font size="+1">The following information has been sent as your
-  feedback:</font></h1>
 
-<table border="1" align=center width="226">
+  <!-- border="1" align=center width="226" -->
+<table >
   <tr>
     <th align="center">Form Field</th>
     <th align="center">Field Value</th>
@@ -27,14 +43,14 @@ for (var i = 0; i < args.length; ++i) {
       value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
     }
 
-    document.writeln('<tr><td align="center">' + field + '</td>');
+    document.writeln('<tr class="selector"><td align="center">' + field + '</td>');
     document.writeln('<td align="center">' + value + '</td></tr>');
   }
 }
 </script>
 
 <noscript>
-<tr><td>
+<tr class="selector"><td>
 <p>You need to turn on Javascript in your browser.</p>
 
 <p>In Microsoft Internet Explorer 4 or greater:</p>
@@ -58,6 +74,9 @@ and then click on "Settings...".)</li>
 </noscript>
 
 </table>
+</article>
+</section>
+</main>
 </body>
 </html>
 
