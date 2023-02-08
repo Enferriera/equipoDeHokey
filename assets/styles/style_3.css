@@ -19,7 +19,7 @@ header {
     background: url(../images/design1_image1.jpg);
     background-position: center;
     background-size: cover;
-    height: 200px;
+    min-height: calc(100vh-20vh);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -510,7 +510,7 @@ Estilos de IMAGENES
 .map-bottom,
     .map-center,
     .map-top {
-        left: 50%;
+        left:20%;
     }
 /*hacemos visible el mapa*/
 .visual-map:hover .maps {
@@ -546,18 +546,23 @@ iframe {
         position: static;
     }
     iframe {
-        width: 300px;
-        height: 200px;
+        width: 200px;
+        height: 100px;
     }
-   
-   
+    /* .map-bottom,
+    .map-center,
+    .map-top {
+        left:20%;
+        right: 100px;
+    }
+    */
 
     .map-center {
-        top: 70%;
+        top: 80%;
     }
 
     .map-bottom {
-        top: 90%;
+        top: 110%;
     } 
 
 }
@@ -566,8 +571,11 @@ iframe {
     .title-section {
         position: static;
         z-index: 1;
+        font-size: 1.5rem;
     }
-
+h1{
+    font-size: 3rem;
+}
     .title-registration {
         position: static;
         transform: translateY(0px);
@@ -580,6 +588,7 @@ iframe {
 
     .title-section .text {
         position: static;
+       
     }
 
     .img-about,
@@ -593,6 +602,13 @@ iframe {
         height: 150px;
     }
 
+ .map-bottom,
+    .map-center,
+    .map-top {
+        left:-200px;
+        right: 5px;
+    }
+    
    
      .map-top {
         top: 80%;
@@ -603,7 +619,7 @@ iframe {
     }
 
     .map-bottom {
-        top: 140%;
+        top: 130%;
     } 
 
     .align-end {
@@ -628,13 +644,16 @@ iframe {
         display:none;
     }
     section{
-        width: 90%;
+        width: 95%;
     }
     .img-about, .img-contact, .img-home{
         display:none;
     }
     .padding-left{
         padding-left:0px ;
+    }
+    nav{
+        padding:0 5px;
     }
 }
 
