@@ -19,7 +19,7 @@
         </div>
     </header>
     <nav>
-        <div>
+        <div class="flex-midle">
             <a class="nav-link" href="./index.html">Home</a>
             <a class="nav-link" href="./about.html">About MDHL</a>
             <a class="nav-link" href="./contact.html">Contact</a>
@@ -35,84 +35,146 @@
             <h2 class="title-section text align-end title-registration">Registration Form</h2>
             <form action="./show_data.html" method="get" class="container-primary">
                 <fieldset>
-                   <legend>Personal Information</legend>
-                   <div></div> <label for="firstName">Player´s First Name:</label>
-                    <input type="text" name="firstName" id="firstName" required autofocus>
-                    <label for="lastName">Last Name:</label>
-                    <input type="text" name="lastName" id="lastName" required>
-                </div> 
-                  <div>  <label for="address">Street Address:</label>
-                    <input type="text" name="address" id="address" required>
-                    <label for="city">City:</label>
-                    <input type="text" name="city" id="city" required></div>
-                    <div><label for="zipCode">Zip Code:</label>
-                    <input type="text" name="zipCode" id="zipCode" required>
-                    <label for="birthDate">Birth Date:</label>
-                    <input type="date" name="birthDate" id="birthDate" required>
-                    <label> Gender:</label>
-                    <label for="genderFemale">Female</label>
-                    <input type="radio" name="gender" id="genderFemale" value="female">
-                    <label for="genderMale">Male</label>
-                    <input type="radio" name="gender" id="genderMale" value="male">
-                </div>
-                   <div> <label> Grade:</label>
-                    <input type="radio" name="grade" value="preSchool" id="preSchool">
-                    <label for="gradePreSchool">Pre-School</label>
-                    <label for="grade1st">1st</label>
-                    <input type="radio" name="grade" id="grade1st" value="1st">
-                    <label for="grade2nd">2nd</label>
-                    <input type="radio" name="grade" id="grade2nd" value="2nd">
-                    <label for="grade3rd">3rd</label>
-                    <input type="radio" name="grade" id="grade3rd" value="3rd">
-                    <label for="grade4th">4th</label>
-                    <input type="radio" name="grade" id="grade4th" value="4th">
-                    <label for="grade5th">5th</label>
-                    <input type="radio" name="grade" id="grade5th" value="5th">
-                </div>
+                    <legend>Personal Information</legend>
+                    <ul class="flex-form list-index">
+                        <li>
+                            <label for="firstName">Player´s First Name:
+                                <input type="text" name="firstName" id="firstName" required autofocus>
+                            </label>
+                            
+                        </li>
+                        <li>
+                            <label for="lastName">Last Name:
+                                <input type="text" name="lastName" id="lastName" required>
+                            </label>
+                            
+                        </li>
+                        <li>
+                            <label for="address">Street Address:
+                                <input type="text" name="address" id="address" required>
+                            </label>
+                            
+                        </li>
+                        <li>
+                            <label for="city">City:
+                                <input type="text" name="city" id="city" required>
+                            </label>
+                            
+                        </li>
+                        <li><label for="zipCode">Zip Code:
+                            <input type="text" name="zipCode" id="zipCode" required>
+                        </label>
+                            
+                        </li>
+                        <li> <label for="birthDate">Birth Date:
+                            <input type="date" name="birthDate" id="birthDate" required>
+                        </label>
+                            
+                        </li>
+                        <li> <label> Gender:</label>
+                            <label for="genderFemale">Female
+                                <input type="radio" name="gender" id="genderFemale" value="female">
+                            </label>
+                            
+                            <label for="genderMale">Male
+                                <input type="radio" name="gender" id="genderMale" value="male">
+                            </label>
+                            
+                        </li>
+                        <li> <label> Grade:</label>
+
+                            <label for="gradePreSchool"> <input type="radio" name="grade" value="preSchool"
+                                    id="gradePreSchool">
+                                Pre-School</label>
+                            <label for="grade1st">1st
+                                <input type="radio" name="grade" id="grade1st" value="1st">
+                            </label>
+
+                            <label for="grade2nd">2nd
+                                <input type="radio" name="grade" id="grade2nd" value="2nd">
+                            </label>
+
+                            <label for="grade3rd">3rd
+                                <input type="radio" name="grade" id="grade3rd" value="3rd">
+                            </label>
+
+                            <label for="grade4th">4th
+                                <input type="radio" name="grade" id="grade4th" value="4th">
+                            </label>
+
+                            <label for="grade5th">5th
+                                <input type="radio" name="grade" id="grade5th" value="5th"></label>
+
+                        </li>
+                    </ul>
                 </fieldset>
                 <fieldset>
                     <legend>Which elementary school do you live near?</legend>
-                    <label>Closest School:</label>
+                    <label>Closest School:
                     <select name="schoolNear">
+                        <option value="empty">Choos closest School</option>
                         <option value="AJ_Katzenmaier">AJ Katzenmaier</option>
                         <option value="Marjorie_P_Hart">
-                       Marjorie P Hart</option>
+                            Marjorie P Hart</option>
                         <option value="Greenbay">Greenbay</option>
                         <option value="North_Elementary">North Elementary</option>
                         <option value="Howard_A_Yeager">Howard A Yeager</option>
                         <option value="South_Elementary">South Elementary</option>
                     </select>
-                    
+                </label>
                 </fieldset>
                 <fieldset>
                     <legend>What position(s) do you normally play? (check all that apply)</legend>
-                    <input type="checkbox" name="position" id="psForward" value="forward">
-                    <label for="psForward">Forward</label>
-                    <input type="checkbox" name="position" id="psMidfield" value="midfield">
-                    <label for="psMidfield">Midfield</label>
-                    <input type="checkbox" name="position" id="psDefense" value="defense">
-                    <label for="psDefense">Defense</label>
-                    <input type="checkbox" name="position" id="psGoalkeeper" value="goalkeeper">
-                    <label for="psGoalkeeper">Goalkeeper</label>
+                    <ul class="flex-form list-index">
+                        <li><label for="psForward"> <input type="checkbox" name="position" id="psForward"
+                                    value="forward">
+                                Forward</label>
+                        </li>
+                        <li> <label for="psMidfield"> <input type="checkbox" name="position" id="psMidfield"
+                                    value="midfield">
+                                Midfield</label>
+                        </li>
+                        <li> <label for="psDefense"> <input type="checkbox" name="position" id="psDefense"
+                                    value="defense">
+                                Defense</label>
+                        </li>
+                        <li><label for="psGoalkeeper"> <input type="checkbox" name="position" id="psGoalkeeper"
+                                    value="goalkeeper">
+                                Goalkeeper</label>
+                        </li>
+                    </ul>
                 </fieldset>
                 <fieldset class="center-flex">
                     <legend>Uniform Size:</legend>
-                    <div><input type="radio" name="uniformSize" id="ySmal" value="Youth_Smal">
-                        <label for="ySmal">Youth Smal</label>
-                        <input type="radio" name="uniformSize" id="yMedium" value="Youth_Medium">
-                        <label for="yMedium">Youth Medium</label>
-                        <input type="radio" name="uniformSize" id="yLarge" value="Youth_Large">
-                        <label for="yLarge">Youth Large</label>
-                    </div>
-                    <div><input type="radio" name="uniformSize" id="small" value="Small">
-                        <label for="small">Small</label>
-                        <input type="radio" name="uniformSize" id="medium" value="Medium">
-                        <label for="medium">Medium</label>
-                        <input type="radio" name="uniformSize" id="large" value="Large">
-                        <label for="large">Large</label>
-                        <input type="radio" name="uniformSize" id="exLarge" value="Extra_Large">
-                        <label for="exLarge">Extra Large</label>
-                    </div>
+                    <ul class="flex-form list-index">
+
+                        <li> <label for="ySmal"> <input type="radio" name="uniformSize" id="ySmal" value="Youth_Smal">
+                                Youth Smal</label>
+                        </li>
+                        <li> <label for="yMedium"> <input type="radio" name="uniformSize" id="yMedium"
+                                    value="Youth_Medium">
+                                Youth Medium</label>
+                        </li>
+                        <li> <label for="yLarge"> <input type="radio" name="uniformSize" id="yLarge"
+                                    value="Youth_Large">
+                                Youth Large</label>
+                        </li>
+                    </ul>
+                    <ul class="flex-form list-index">
+                        <li> <label for="small"> <input type="radio" name="uniformSize" id="small" value="Small">
+                                Small</label>
+                        </li>
+                        <li> <label for="medium"> <input type="radio" name="uniformSize" id="medium" value="Medium">
+                                Medium</label>
+                        </li>
+                        <li> <label for="large"> <input type="radio" name="uniformSize" id="large" value="Large">
+                                Large</label>
+                        </li>
+                        <li><label for="exLarge"> <input type="radio" name="uniformSize" id="exLarge"
+                                    value="Extra_Large">
+                                Extra Large</label>
+                        </li>
+                    </ul>
                 </fieldset>
 
                 <fieldset>
@@ -128,10 +190,17 @@
                     <p>By entering your name below, I hereby agree and authorize rhe above. In addition, by entering
                         your name below,I also acknowledge that I have read the cancellation policy and agree to its
                         terms.</p>
-                    <label for="sign">Parent/Guardian Name:</label>
-                    <input type="text" name="sign" id="sign" required>
-                    <label for="dateSign">Date:</label>
-                    <input type="date" name="dateSign" id="dateSign" required>
+                    <ul class="flex-form list-index">
+                        <li> <label for="parentSign">Parent/Guardian Name:
+                                <input type="text" name="parentSign" id="parentSign" required>
+                            </label>
+                        </li>
+
+                        <li> <label for="dateSign">Date:
+                                <input type="date" name="dateSign" id="dateSign" required>
+                            </label>
+                        </li>
+                    </ul>
                 </fieldset>
                 <input type="submit" value="Submit">
                 <input type="reset" value="Reset Form">

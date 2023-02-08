@@ -59,6 +59,7 @@ Estilo de contenedor
     z-index: 2;
     width: inherit;
 }
+
 .bg-registration {
     background: url(../images/funcoDucksMediana.png);
     background-position: top left;
@@ -102,7 +103,11 @@ Estilo de contenedor
     justify-content: center;
 }
 
-
+.flex-form{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
 
 /*
 Estilos de TEXTO
@@ -168,8 +173,8 @@ legend {
 }
 
 fieldset {
-    padding: 10px 0px;
-    padding-left: 30px;
+    padding: 20px 30px;
+    
     margin-bottom: 10px;
 }
 
@@ -282,7 +287,7 @@ nav {
     height: min-content;
     background-color: black;
     border-bottom: 1px solid whitesmoke;
-    padding: 0 20px;
+    padding: 0 30px;
     z-index: 5;
     display: flex;
     justify-content: space-between;
@@ -484,30 +489,160 @@ Estilos de IMAGENES
 
 /*Definimos el marco del mapa*/
 .maps {
-    position:absolute;
+    position: absolute;
     visibility: hidden;
-    
-    }
-    .map-top{
-        top:50%;
-        
-    }
-    .map-center{
-        top:60%;
-        
-    }
-    .map-bottom{
-        top:80%;
-    }
 
+}
+
+.map-top {
+    top: 50%;
+
+}
+
+.map-center {
+    top: 60%;
+
+}
+
+.map-bottom {
+    top: 80%;
+}
+.map-bottom,
+    .map-center,
+    .map-top {
+        left: 50%;
+    }
 /*hacemos visible el mapa*/
 .visual-map:hover .maps {
     visibility: visible;
     transition: all 0.5s linear;
-  
+
 }
 
 iframe {
     width: 400px;
     height: 300px;
+}
+
+/*Aplicamos mediaquery*/
+
+@media only screen and (max-width:1100px){
+    .title-section {
+        position: static;
+        z-index: 1;
+    }
+
+    .title-registration {
+        position: static;
+        transform: translateY(0px);
+      z-index: 1;
+    }
+
+    .bg-registration {
+        background: lightgray;
+    }
+
+    .title-section .text {
+        position: static;
+    }
+    iframe {
+        width: 300px;
+        height: 200px;
+    }
+   
+   
+
+    .map-center {
+        top: 70%;
+    }
+
+    .map-bottom {
+        top: 90%;
+    } 
+
+}
+
+@media only screen and (max-width:768px) {
+    .title-section {
+        position: static;
+        z-index: 1;
+    }
+
+    .title-registration {
+        position: static;
+        transform: translateY(0px);
+        z-index: 1;
+    }
+
+    .bg-registration {
+        background: lightgray;
+    }
+
+    .title-section .text {
+        position: static;
+    }
+
+    .img-about,
+    .img-contact,
+    .img-home {
+        width: 150px;
+    }
+
+    iframe {
+        width: 200px;
+        height: 150px;
+    }
+
+   
+     .map-top {
+        top: 80%;
+    }
+
+    .map-center {
+        top: 100%;
+    }
+
+    .map-bottom {
+        top: 140%;
+    } 
+
+    .align-end {
+        align-self: center;
+        padding-right: 0px;
+    }
+    .map-bottom,
+    .map-center,
+    .map-top {
+        left: 40%;
+    }
+
+    .logo{
+        width: 50px;
+    }
+
+    
+}
+
+@media only screen and (max-width:701px){
+    .logo{
+        display:none;
+    }
+    section{
+        width: 90%;
+    }
+    .img-about, .img-contact, .img-home{
+        display:none;
+    }
+    .padding-left{
+        padding-left:0px ;
+    }
+}
+
+@media only screen and (max-width:585px){
+    nav{
+        justify-content: space-between;
+    }
+    .flex-midle{
+        width:300px;
+    }
 }
